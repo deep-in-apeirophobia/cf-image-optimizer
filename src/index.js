@@ -14,12 +14,18 @@ export default {
     // You can implement various different parameters here.
     if (url.searchParams.has("fit"))
       options.cf.image.fit = url.searchParams.get("fit");
-    if (url.searchParams.has("width"))
-      options.cf.image.width = url.searchParams.get("width");
-    if (url.searchParams.has("height"))
-      options.cf.image.height = url.searchParams.get("height");
-    if (url.searchParams.has("quality"))
-      options.cf.image.quality = url.searchParams.get("quality");
+    if (url.searchParams.has("width")) {
+      const w = url.searchParams.get("width");
+      if (w !== "80" || w !== "100")
+        return new Response("Invalid width, should be eitehr 80 or 100", {
+          status: 400,
+        });
+      options.cf.image.width = w;
+    }
+    // if (url.searchParams.has("height"))
+    //   options.cf.image.height = url.searchParams.get("height");
+    // if (url.searchParams.has("quality"))
+    //   options.cf.image.quality = url.searchParams.get("quality");
 
     // Your Worker is responsible for automatic format negotiation. Check the Accept header.
     const accept = request.headers.get("Accept");

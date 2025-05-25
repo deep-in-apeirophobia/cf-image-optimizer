@@ -3,5 +3,5 @@ main = "src/index.js"
 module = true
 compatibility_date = "2025-05-25"
 routes = [
-  "imgs.atrin.dev/op*",
+  "imgs.atrin.dev/op",
 ]

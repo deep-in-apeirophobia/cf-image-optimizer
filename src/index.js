@@ -8,7 +8,14 @@ export default {
     let url = new URL(request.url);
 
     // Cloudflare-specific options are in the cf object.
-    let options = { cf: { image: {} } };
+    let options = {
+      cf: {
+        image: {
+          blur: 50,
+          rotate: 90,
+        },
+      },
+    };
 
     // Copy parameters from query string to request options.
     // You can implement various different parameters here.

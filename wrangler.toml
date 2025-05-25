@@ -1,0 +1,8 @@
+name = "cf-image-optimizer"
+main = "src/index.js"
+module = true
+compatibility_date = "2025-05-25"
+compatibility_flags = [ "nodejs_compat", "experimental_workers_api" ]
+routes = [
+  "imgs.atrin.dev/op*",
+]

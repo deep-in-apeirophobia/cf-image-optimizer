@@ -16,7 +16,7 @@ export default {
       options.cf.image.fit = url.searchParams.get("fit");
     if (url.searchParams.has("width")) {
       const w = url.searchParams.get("width");
-      if (w !== "80" || w !== "100")
+      if (w !== 80 || w !== 100)
         return new Response("Invalid width, should be eitehr 80 or 100", {
           status: 400,
         });

@@ -1,0 +1,24 @@
+{
+  "name": "cf-image-optimizer",
+  "version": "1.0.0",
+  "description": "CF Image Optimizer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deep-in-apeirophobia/cf-image-optimizer.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "image",
+    "optimization"
+  ],
+  "author": "Atrin Hojjat (atrin.hojjat@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deep-in-apeirophobia/cf-image-optimizer/issues"
+  },
+  "homepage": "https://github.com/deep-in-apeirophobia/cf-image-optimizer#readme"
+}

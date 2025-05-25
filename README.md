@@ -1,2 +1,1 @@
-# cf-image-optimizer
-CloudFlare image Optimization
+# cf-image-optimizer CloudFlare image Optimization

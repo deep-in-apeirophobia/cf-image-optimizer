@@ -3,5 +3,9 @@ main = "src/index.js"
 module = true
 compatibility_date = "2025-05-25"
 routes = [
-  "imgs.atrin.dev/op",
+  "imgs.atrin.dev/op*",
 ]
+
+workers_dev = true
+
+zone_id = "4d6c8ecff168f8b95b41dd4bad621dc9"

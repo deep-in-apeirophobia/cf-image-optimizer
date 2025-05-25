@@ -34,6 +34,17 @@ export default {
     } else if (/image\/webp/.test(accept)) {
       options.cf.image.format = "webp";
     }
+    if (url.searchParams.has("forceFormat")) {
+      const f = url.searchParams.get("forceFormat");
+
+      if (["png", "webp", "avif", "jpg"].indexOf(f) === -1) {
+        return new Response("Invalid format specified", {
+          status: 400,
+        });
+      }
+
+      options.cf.image.format = f;
+    }
 
     // Get URL of the original (full size) image to resize.
     // You could adjust the URL here, e.g., prefix it with a fixed address of your server,

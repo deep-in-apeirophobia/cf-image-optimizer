@@ -10,10 +10,7 @@ export default {
     // Cloudflare-specific options are in the cf object.
     let options = {
       cf: {
-        image: {
-          blur: 50,
-          rotate: 90,
-        },
+        image: {},
       },
     };
 
